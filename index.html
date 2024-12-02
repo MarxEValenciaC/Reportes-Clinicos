@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    
+    <title>sistema de pacientes</title>
+    
+</head>
+<body>
+
+    <div class="container">
+   
+        <div class="containertags">
+            <div class="titulosuperior" >CENTRO DE SALUD</div>
+            <div class="superior Inicio" onclick="redirigir1()">INICIO</div>
+            <div class="superior Inicio" onclick="redirigir2()">SOBRE NOSOTROS</div>
+            <div class="superior Inicio" onclick="redirigir3()">CONTACTO</div>
+        </div> 
+        <div class="container2">
+
+           <div class="saludo">BIENVENIDO</div> 
+            <div class="container3"> 
+                <div class="tabs">
+                    <div class="tab active-tab" onclick="openTab(event, 'tab1')">Paciente</div>
+                    <div class="tab" onclick="openTab(event, 'tab2')">Medico</div>
+                </div>
+                
+                <div id="tab1" class="tab-content active-content">
+                    <div class="LoginPaciente">
+                        <h1>Iniciar sesión como paciente</h1>
+                        <div class="contLogin">
+                        <input class="login" type="text" placeholder="ingrese su nombre">
+                        <input class="login" type="password" placeholder="ingrese su contraseña"></div>
+                        <div class="enter" onclick="ingresarPaciente()">
+                            <h1>ingresar</h1>
+                        </div>
+                        <p>Si olvidaste tu contraseña <a href="#">has click aqui</a> </p>
+                        
+                    </div>
+                </div>
+                
+                <div id="tab2" class="tab-content">
+                    <div class="loginMedico">
+                        <h1>Iniciar sesion como medico</h1>
+                        <div class="contLogin">
+                            <input class="login" type="text" placeholder="ingrese su codigo ">
+                            <input class="login" type="password" placeholder="ingrese su contraseña">
+                            </div>
+                            <div class="enter" onclick="ingresarMedico()">
+                                <h1>ingresar</h1>
+                            </div>
+                            <p>Si olvidaste tu contraseña <a href="#">has click aqui</a> </p>
+                    </div>
+                </div>
+             
+
+
+
+
+            </div>
+           </div>
+    </div>        
+    <script src="scripts.js"></script>
+</body>
+</html>
