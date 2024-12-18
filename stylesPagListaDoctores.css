@@ -1,0 +1,50 @@
+.containerDoctores{
+    width: 1400px;
+    height: 600px; 
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #5796f3;
+    padding-top: 30px;
+    position: relative;
+}
+.tablaDoctores{
+    position: absolute;
+    border: 1px solid white;
+    top: 100px;
+    left: 480px;
+    border-collapse: collapse;
+}
+.circulo {
+    position: absolute; /* Los círculos no afectarán el flujo del contenido */
+    width: 1200px;
+    height: 630px;
+    background-color: antiquewhite;
+    border-radius: 50% 0% 0% 50%;
+    
+}
+.tittle{
+    position: absolute;
+    top: 30px;
+    left: 830px;
+    
+}
+.circulo1{
+    top: 0px;
+    left: 200px;
+}
+h1{
+    color: black;
+    
+}
+th, td{
+    height: 20px;
+    width: 300px;
+    text-align: center;
+    border: 1px solid black;
+}
+th{
+    background-color: aliceblue;
+}
+td{
+    color: black;
+}
